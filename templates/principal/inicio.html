@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row mt-4">
+    <div class="col-md-8 mx-auto">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">¡Conexión Exitosa con PostgreSQL!</h4>
+            </div>
+            <div class="card-body text-center py-4">
+                <h5 class="card-title text-success mb-3">
+                    ✔ Django y Bootstrap están funcionando correctamente
+                </h5>
+                <p class="card-text text-muted">
+                    Resultado de la consulta SQL pura ejecutada (<code>SELECT 1;</code>):
+                </p>
+                <div class="alert alert-dark d-inline-block px-4 fs-4 fw-bold mb-0">
+                    {{ resultado }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
